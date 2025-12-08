@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c7060743a0.js" crossorigin="anonymous"></script>
+    <title>ECCENTRIC WEARS</title>
+</head>
+<body>
+    <div class="nav-header">
+        <p>Free shipping on orders over $50</p>
+    </div>
+
+    <header class="main-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-container">
+                <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu" />
+                <label for="menu-toggle" class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <ul class="nav-links">
+                    <li><a href="/shop.html">Shop</a></li>
+                    <li><a href="/about-us.html">About</a></li>
+                </ul>
+
+                <a href="#" class="logo" aria-label="Eccentric home">ECCENTRIC</a>
+
+                <button class="cart-icon" aria-label="Shopping cart">
+                    <img src="assets/cart-icon.svg" alt="" aria-hidden="true">
+                </button>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero-section" aria-labelledby="hero-heading">
+            <div class="hero-text">
+                <h1 id="hero-heading">ELEVATE YOUR STYLE</h1>
+                <p>Spring/Summer collection now available</p>
+
+                <a href="/shop.html" class="shopBtn">SHOP NOW</a>
+            </div>
+            <div class="hero-products" role="region" aria-label="Featured products carousel">
+                <div class="slide pos-2"><img src="images/header 1.webp" alt="Model wearing hoodie and cap"></div>
+                <div class="slide pos-1"><img src="images/header 2.webp" alt="Model lacing shoe"></div>
+                <div class="slide pos-3"><img src="images/header 3.webp" alt="Model in sweater and cap"></div>
+            </div>
+        </section>
+
+        <section class="products-section new-in" aria-labelledby="new-in-heading">
+            <div class="products-header">
+                <h2 id="new-in-heading">NEW IN</h2>
+                <a href="/shop.html" aria-label="View all new products">VIEW ALL</a>
+            </div>
+            <div class="products-slider-container" role="region" aria-label="New products">
+                <div class="products-img">
+                        <article class="product-slide" onclick="window.location.href='product-detail.html?id=6'" style="cursor: pointer;">
+                            <img src="images/product1.webp" alt="Black hoodie product">
+                            <div class="product-text">
+                                <h3>BLACK HOODIE</h3>
+                                <p class="price">$79.00</p>
+                            </div>
+                        </article>
+                        <article class="product-slide" onclick="window.location.href='product-detail.html?id=5'" style="cursor: pointer;">
+                            <img src="images/product2.webp" alt="Explorer jacket product">
+                            <div class="product-text">
+                                <h3>EXPLORER JACKET</h3>
+                                <p class="price">$124.99</p>
+                            </div>
+                        </article>
+                        <article class="product-slide" onclick="window.location.href='product-detail.html?id=1'" style="cursor: pointer;">
+                            <img src="images/product3.webp" alt="White logo t-shirt product">
+                            <div class="product-text">
+                                <h3>WHITE LOGO T-SHIRT</h3>
+                                <p class="price">$45.00</p>
+                            </div>
+                        </article>
+                        <article class="product-slide" onclick="window.location.href='product-detail.html?id=4'" style="cursor: pointer;">
+                            <img src="images/product4.webp" alt="White sweatshirt product">
+                            <div class="product-text">
+                                <h3>WHITE SWEATSHIRT</h3>
+                                <p class="price">$74.00</p>
+                            </div>
+                        </article>
+                        <article class="product-slide" onclick="window.location.href='product-detail.html?id=2'" style="cursor: pointer;">
+                            <img src="images/product5.webp.jpg" alt="Black logo t-shirt product">
+                            <div class="product-text">
+                                <h3>BLACK LOGO T-SHIRT</h3>
+                                <p class="price">$45.00</p>
+                            </div>
+                        </article>
+                        <article class="product-slide" onclick="window.location.href='product-detail.html?id=3'" style="cursor: pointer;">
+                            <img src="images/product6.webp" alt="Long sleeve t-shirt product">
+                            <div class="product-text">
+                                <h3>LONG SLEEVE T-SHIRT</h3>
+                                <p class="price">$60.00</p>
+                            </div>
+                        </article>
+
+                        <!-- Duplicate slides for seamless loop -->
+                        <article class="product-slide" aria-hidden="true" onclick="window.location.href='product-detail.html?id=6'" style="cursor: pointer;">
+                            <img src="images/product1.webp" alt="">
+                            <div class="product-text">
+                                <h3>BLACK HOODIE</h3>
+                                <p class="price">$79.00</p>
+                            </div>
+                        </article>
+                        <article class="product-slide" aria-hidden="true" onclick="window.location.href='product-detail.html?id=5'" style="cursor: pointer;">
+                            <img src="images/product2.webp" alt="">
+                            <div class="product-text">
+                                <h3>EXPLORER JACKET</h3>
+                                <p class="price">$124.99</p>
+                            </div>
+                        </article>
+                        <article class="product-slide" aria-hidden="true" onclick="window.location.href='product-detail.html?id=1'" style="cursor: pointer;">
+                            <img src="images/product3.webp" alt="">
+                            <div class="product-text">
+                                <h3>WHITE LOGO T-SHIRT</h3>
+                                <p class="price">$45.00</p>
+                            </div>
+                        </article>
+                        <article class="product-slide" aria-hidden="true" onclick="window.location.href='product-detail.html?id=4'" style="cursor: pointer;">
+                            <img src="images/product4.webp" alt="">
+                            <div class="product-text">
+                                <h3>WHITE SWEATSHIRT</h3>
+                                <p class="price">$74.00</p>
+                            </div>
+                        </article>
+                        <article class="product-slide" aria-hidden="true" onclick="window.location.href='product-detail.html?id=2'" style="cursor: pointer;">
+                            <img src="images/product5.webp" alt="">
+                            <div class="product-text">
+                                <h3>BLACK LOGO T-SHIRT</h3>
+                                <p class="price">$45.00</p>
+                            </div>
+                        </article>
+                        <article class="product-slide" aria-hidden="true" onclick="window.location.href='product-detail.html?id=3'" style="cursor: pointer;">
+                            <img src="images/product6.webp" alt="">
+                            <div class="product-text">
+                                <h3>LONG SLEEVE T-SHIRT</h3>
+                                <p class="price">$60.00</p>
+                            </div>
+                        </article>    
+                </div>
+            </div>
+        </section>
+
+        <nav class="clothes-nav" aria-label="Product categories">
+            <h2>CATEGORIES</h2>
+            <ul>
+                <li><a href="/shop.html?category=t-shirts">T-SHIRTS</a></li>
+                <li><a href="/shop.html?category=sneakers">SNEAKERS</a></li>
+                <li><a href="/shop.html?category=hoodies">HOODIES</a></li>
+                <li><a href="/shop.html?category=bottoms">BOTTOMS</a></li>
+                <li><a href="/shop.html?category=accessories">ACCESSORIES</a></li>
+            </ul>
+        </nav>
+
+        <section class="collab-hero" aria-labelledby="collab-heading">
+            <h2 id="collab-heading">ECCENTRIC X YEEZY FALL COLLABORATION</h2>
+            <a href="/shop.html" class="shopBtn">SHOP NOW</a>
+        </section>
+
+        <section class="products-section best-seller" aria-labelledby="bestseller-heading">
+            <div class="products-header">
+                <h2 id="bestseller-heading">BEST SELLER</h2>
+                <a href="/shop.html" aria-label="View all new products">VIEW ALL</a>
+            </div>
+            <div class="products-slider-container" role="region" aria-label="Bestselling products">
+                <div class="products-img">
+                    <article class="product-slide" onclick="window.location.href='product-detail.html?id=11'" style="cursor: pointer;">
+                        <img src="images/bucket hat.webp" alt="Bucket hat product">
+                        <div class="product-text">
+                            <h3>BUCKET HAT</h3>
+                            <p class="price">$59.99</p>
+                        </div>
+                    </article>
+                    <article class="product-slide" onclick="window.location.href='product-detail.html?id=9'" style="cursor: pointer;">
+                        <img src="images/low sneakers.webp" alt="Low sneakers product">
+                        <div class="product-text">
+                            <h3>LOW SNEAKERS</h3>
+                            <p class="price">$89.99</p>
+                        </div>
+                    </article>
+                    <article class="product-slide" onclick="window.location.href='product-detail.html?id=7'" style="cursor: pointer;">
+                        <img src="images/black trail pants.webp" alt="Black trail pants product">
+                        <div class="product-text">
+                            <h3>BLACK TRAIL PANTS</h3>
+                            <p class="price">$89.00</p>
+                        </div>
+                    </article>
+                    <article class="product-slide" onclick="window.location.href='product-detail.html?id=5'" style="cursor: pointer;">
+                        <img src="images/product2.webp" alt="Explorer jacket product">
+                        <div class="product-text">
+                            <h3>EXPLORER JACKET</h3>
+                            <p class="price">$124.99</p>
+                        </div>
+                    </article>
+                    <article class="product-slide" onclick="window.location.href='product-detail.html?id=6'" style="cursor: pointer;">
+                        <img src="images/product1.webp" alt="Black hoodie product">
+                        <div class="product-text">
+                            <h3>BLACK HOODIE</h3>
+                            <p class="price">$79.00</p>
+                        </div>
+                    </article>
+
+
+                    <!-- Duplicate for seamless loop -->
+                    <article class="product-slide" aria-hidden="true" onclick="window.location.href='product-detail.html?id=11'" style="cursor: pointer;">
+                        <img src="images/bucket hat.webp" alt="">
+                        <div class="product-text">
+                            <h3>BUCKET HAT</h3>
+                            <p class="price">$59.99</p>
+                        </div>
+                    </article>
+                    <article class="product-slide" aria-hidden="true" onclick="window.location.href='product-detail.html?id=9'" style="cursor: pointer;">
+                        <img src="images/low sneakers.webp" alt="">
+                        <div class="product-text">
+                            <h3>LOW SNEAKERS</h3>
+                            <p class="price">$89.99</p>
+                        </div>
+                    </article>
+                    <article class="product-slide" aria-hidden="true" onclick="window.location.href='product-detail.html?id=7'" style="cursor: pointer;">
+                        <img src="images/black trail pants.webp" alt="">
+                        <div class="product-text">
+                            <h3>BLACK TRAIL PANTS</h3>
+                            <p class="price">$89.00</p>
+                        </div>
+                    </article>
+                    <article class="product-slide" aria-hidden="true" onclick="window.location.href='product-detail.html?id=5'" style="cursor: pointer;">
+                        <img src="images/product2.webp" alt="">
+                        <div class="product-text">
+                            <h3>EXPLORER JACKET</h3>
+                            <p class="price">$124.99</p>
+                        </div>
+                    </article>
+                    <article class="product-slide" aria-hidden="true" onclick="window.location.href='product-detail.html?id=6'" style="cursor: pointer;">
+                        <img src="images/product1.webp" alt="">
+                        <div class="product-text">
+                            <h3>BLACK HOODIE</h3>
+                            <p class="price">$79.00</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section" aria-labelledby="testimonials-heading">
+            <div class="testimonial-header">
+                <h2 id="testimonials-heading">WHAT OUR CUSTOMERS SAY</h2>
+                <p>Real people, real style, real reviews</p>
+            </div>
+
+
+            <figure class="featured-testimonial">
+                <img src="images/feature fit.jpg" alt="Customer @erystech wearing Eccentric products">
+                <figcaption class="featured-username"> 
+                    <h3>@erystech</h3>
+                </figcaption>
+            </figure>
+
+            <div class="testimonials-grid" role="list" aria-label="Customer testimonials">
+                <article class="testimonial-card" role="listitem">
+                    <div class="verified-badge">Verified</div>
+                    <img class="testimonial-image" src="images/testimony1.jpg" alt="Verified customer wearing Eccentric products">
+                </article>
+                
+                <article class="testimonial-card" role="listitem">
+                    <div class="verified-badge">Verified</div>
+                    <img class="testimonial-image" src="images/testimony2.jpg" alt="Verified customer wearing Eccentric products">
+                </article>
+                
+                <article class="testimonial-card" role="listitem">
+                    <div class="verified-badge">Verified</div>
+                    <img class="testimonial-image" src="images/testimony3.jpg" alt="Verified customer wearing Eccentric products">
+                </article>
+                
+                <article class="testimonial-card" role="listitem">
+                    <div class="verified-badge">Verified</div>
+                    <img class="testimonial-image" src="images/testimony4.jpg" alt="Verified customer wearing Eccentric products">
+                </article>
+                
+                <article class="testimonial-card" role="listitem">
+                    <div class="verified-badge">Verified</div>
+                    <img class="testimonial-image" src="images/testimony5.jpg" alt="Verified customer wearing Eccentric products">
+                </article>
+                
+                <article class="testimonial-card" role="listitem">
+                    <div class="verified-badge">Verified</div>
+                    <img class="testimonial-image" src="images/tetstimony6.jpg" alt="Verified customer wearing Eccentric products">
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-section-1">
+                <section class="newsletter-section" aria-labelledby="newsletter-heading">
+                    <h3 id="newsletter-heading">Subscribe to Our Newsletter</h3>
+                    <form class="newsletter-form" aria-label="Newsletter signup">
+                        <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </section>
+
+                <section class="social-section" aria-labelledby="social-heading">
+                    <h3 id="social-heading">Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                            <img src="assets/Instagram.svg" alt="" aria-hidden="true">
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X (Twitter)">
+                            <img src="assets/Twitter.svg" alt="" aria-hidden="true">
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok">
+                            <img src="assets/Tiktok.svg" alt="" aria-hidden="true">
+                        </a>
+                    </div>
+                </section>
+
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <a href="/shop.html">Shop</a>
+                    <a href="/about-us.html">About</a>
+                </nav>
+            </div>
+
+            <div class="footer-right">
+                <a href="#" class="logo-footer" aria-label="Eccentric home">ECCENTRIC</a>
+
+                <nav class="legal-links" aria-label="Legal links">
+                    <a href="#" onclick="alert('Coming soon!'); return false;">Privacy Policy</a>
+                    <a href="#" onclick="alert('Coming soon!'); return false;">Terms & Conditions</a>
+                    <a href="#" onclick="alert('Coming soon!'); return false;">Cookies Settings</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">© @erystech 2024</p>
+        </div>
+    </footer>
+
+
+
+
+
+    
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
