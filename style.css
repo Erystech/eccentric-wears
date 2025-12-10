@@ -832,7 +832,7 @@ footer {
     padding: 0 20px;
 }
 
-/* 🟢 ADDITION: Section header */
+/*Section header */
 .related-header {
     display: flex;
     justify-content: space-between;
@@ -866,14 +866,14 @@ footer {
     color: var(--text-color2);
 }
 
-/* 🟢 ADDITION: Products grid */
+/*Products grid */
 .related-products-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
-/* 🟢 ADDITION: Individual product card */
+/*Individual product card */
 .related-product-card {
     background: #fff;
     border-radius: 8px;
@@ -895,7 +895,7 @@ footer {
     display: block;
 }
 
-/* 🟢 ADDITION: Product info section */
+/*Product info section */
 .related-product-info {
     padding: 16px;
 }
@@ -936,6 +936,48 @@ footer {
 .related-add-cart:hover {
     background: var(--text-color1);
     color: var(--text-color2);
+}
+
+
+/* ============================================ */
+/* PRELOADER STYLES */
+/* ============================================ */
+
+/* The Curtain Container */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color); 
+    z-index: 9999; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* The Spinner Animation */
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--text-color1); 
+    border-top: 5px solid var(--primary-color); 
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; 
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 
@@ -1100,7 +1142,7 @@ footer {
 /* PRODUCT DETAIL PAGE STYLING */
 /* ============================================ */
 
-/* 🟢 ADDITION: Container for entire product detail page */
+/*  Container for entire product detail page */
 .detail-container {
     max-width: 1400px;
     margin: 0 auto;
@@ -1108,7 +1150,7 @@ footer {
     background-color: var(--secondary-color);
 }
 
-/* 🟢 ADDITION: Back button styling - matches your theme */
+/* Back button styling*/
 .back-button {
     background: none;
     border: 1px solid var(--text-color1);
@@ -1131,7 +1173,7 @@ footer {
     transform: translateX(-5px);
 }
 
-/* 🟢 ADDITION: Main product detail grid layout */
+/* Main product detail grid layout */
 .product-detail {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1139,14 +1181,14 @@ footer {
     margin-top: 20px;
 }
 
-/* 🟢 ADDITION: Image gallery section */
+/*Image gallery section */
 .product-images {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-/* 🟢 ADDITION: Main product image styling */
+/* Main product image styling */
 #mainImage {
     width: 100%;
     height: 600px;
@@ -1161,14 +1203,14 @@ footer {
     transform: scale(1.02);
 }
 
-/* 🟢 ADDITION: Thumbnail container */
+/*Thumbnail container */
 .thumbnails {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 12px;
 }
 
-/* 🟢 ADDITION: Individual thumbnail styling */
+/*Individual thumbnail styling */
 .thumbnails img {
     width: 100%;
     height: 100px;
@@ -1185,13 +1227,13 @@ footer {
     transform: scale(1.05);
 }
 
-/* 🟢 ADDITION: Active thumbnail highlighting */
+/*Active thumbnail highlighting */
 .thumbnails img.active {
     border-color: var(--text-color1);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* 🟢 ADDITION: Product information section */
+/*Product information section */
 .product-details-info {
     display: flex;
     flex-direction: column;
@@ -1199,7 +1241,7 @@ footer {
     padding: 20px 0;
 }
 
-/* 🟢 ADDITION: Product name styling - matches your hero headings */
+/* Product name styling - matches your hero headings */
 .product-details-info h1 {
     font-family: "Mona sans wide", sans-serif;
     font-weight: 900;
@@ -1209,7 +1251,7 @@ footer {
     margin: 0;
 }
 
-/* 🟢 ADDITION: Product price - uses your primary color */
+/* Product price - uses your primary color */
 .product-details-info .price {
     font-family: "Mona sans", sans-serif;
     font-weight: 700;
@@ -1218,7 +1260,7 @@ footer {
     color: var(--primary-color);
 }
 
-/* 🟢 ADDITION: Product category tag */
+/* Product category tag */
 .product-details-info .category {
     display: inline-block;
     padding: 8px 16px;
@@ -1233,7 +1275,7 @@ footer {
     width: fit-content;
 }
 
-/* 🟢 ADDITION: Product description */
+/* Product description */
 .product-details-info .description {
     font-family: "Mona sans", sans-serif;
     font-size: 18px;
@@ -1243,7 +1285,7 @@ footer {
     max-width: 600px;
 }
 
-/* 🟢 ADDITION: Add to cart button - matches your shopBtn style */
+/* Add to cart button - matches your shopBtn style */
 .add-to-cart {
     background-color: var(--primary-color);
     color: var(--text-color1);
@@ -1273,7 +1315,7 @@ footer {
     transform: translateY(0);
 }
 
-/* 🟢 ADDITION: Error message styling */
+/*Error message styling */
 .error-message {
     text-align: center;
     padding: 60px 20px;
@@ -1296,7 +1338,7 @@ footer {
     margin-bottom: 24px;
 }
 
-/* 🟢 ADDITION: "More items" section placeholder */
+/* "More items" section placeholder */
 .more-items {
     max-width: 1400px;
     margin: 60px auto 0;
@@ -1306,7 +1348,7 @@ footer {
 /* SHOPPING CART STYLES */
 /* ============================================ */
 
-/* 🟢 ADDITION: Cart badge on icon */
+/* Cart badge on icon */
 .cart-icon {
     position: relative;
 }
@@ -1330,7 +1372,7 @@ footer {
     border: 2px solid var(--secondary-color);
 }
 
-/* 🟢 ADDITION: Badge pulse animation */
+/*Badge pulse animation */
 .cart-badge.pulse {
     animation: badgePulse 0.6s ease;
 }
@@ -1340,7 +1382,7 @@ footer {
     50% { transform: scale(1.3); }
 }
 
-/* 🟢 ADDITION: Cart overlay (dark background) */
+/*Cart overlay (dark background) */
 .cart-overlay {
     position: fixed;
     top: 0;
@@ -1359,7 +1401,7 @@ footer {
     visibility: visible;
 }
 
-/* 🟢 ADDITION: Cart panel (slides in from right) */
+/*Cart panel (slides in from right) */
 .cart-panel {
     position: fixed;
     top: 0;
@@ -1380,7 +1422,7 @@ footer {
     transform: translateX(0);
 }
 
-/* 🟢 ADDITION: Cart header */
+/*Cart header */
 .cart-header {
     display: flex;
     justify-content: space-between;
@@ -1420,14 +1462,14 @@ footer {
     transform: rotate(90deg);
 }
 
-/* 🟢 ADDITION: Cart items container (scrollable) */
+/*Cart items container (scrollable) */
 .cart-items-container {
     flex: 1;
     overflow-y: auto;
     padding: 20px;
 }
 
-/* 🟢 ADDITION: Individual cart item */
+/*Individual cart item */
 .cart-item {
     display: flex;
     gap: 16px;
@@ -1471,7 +1513,7 @@ footer {
     margin: 0;
 }
 
-/* 🟢 ADDITION: Quantity controls */
+/*Quantity controls */
 .quantity-controls {
     display: flex;
     align-items: center;
@@ -1508,7 +1550,7 @@ footer {
     text-align: center;
 }
 
-/* 🟢 ADDITION: Remove item button */
+/*Remove item button */
 .remove-item {
     position: absolute;
     top: 8px;
@@ -1533,7 +1575,7 @@ footer {
     transform: rotate(90deg);
 }
 
-/* 🟢 ADDITION: Empty cart state */
+/*Empty cart state */
 .cart-empty {
     text-align: center;
     padding: 60px 20px;
@@ -1573,7 +1615,7 @@ footer {
     color: var(--text-color2);
 }
 
-/* 🟢 ADDITION: Cart footer */
+/*Cart footer */
 .cart-footer {
     padding: 20px 24px;
     border-top: 2px solid var(--text-color1);
@@ -1965,6 +2007,14 @@ footer {
         margin-top: 9px;
     }
 
+    .product-text h3 {
+        font-size: 15px;
+    }
+
+    .price {
+        font-size: 12px;
+    }
+
     .products-img {
         width: 600%;
         animation: slide-desktop 36s infinite linear;
@@ -2219,6 +2269,12 @@ footer {
     .hero-products {
         padding-top: 33em;
         margin-bottom: -20em;
+    }
+    .product-text {
+        font-size: 13px;
+    }
+    .price {
+        font-size: 10px
     }
     .testimonials-grid {
         gap: 10px;

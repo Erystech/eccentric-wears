@@ -41,5 +41,22 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+
+    // Loading state (wait for the page to load)
+    window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    
+    if (preloader) {
+        // Add the class that fades it out
+        preloader.classList.add('loader-hidden');
+        
+        // Optional: Remove it from the HTML entirely after the fade finishes
+        // This keeps the DOM clean
+        preloader.addEventListener('transitionend', function() {
+            preloader.remove();
+        });
+    }
+});
 });
 
